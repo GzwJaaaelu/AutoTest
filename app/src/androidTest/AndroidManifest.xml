@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jaaaelu.gzw.autotest">
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 多进程必备 -->
+    <instrumentation
+        android:name="androidx.test.runner.AndroidJUnitRunner"
+        android:targetPackage="com.jaaaelu.gzw.autotest"
+        android:targetProcesses="*">
+        <meta-data
+            android:name="remoteMethod"
+            android:value="androidx.test.espresso.remote.EspressoRemote#remoteInit" />
+    </instrumentation>
+
+</manifest>

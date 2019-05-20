@@ -1,6 +1,7 @@
 package com.jaaaelu.gzw.autotest;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements PlusOneFragment.O
                         .setNegativeButton("yes", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
+                                startActivity(new Intent(MainActivity.this, MoreDataActivity.class));
                                 dialog.dismiss();
                             }
                         })

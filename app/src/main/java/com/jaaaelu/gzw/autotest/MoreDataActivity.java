@@ -22,9 +22,9 @@ public class MoreDataActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_more_data);
 
-//        initSpinner();
+        initSpinner();
 
-        initRecycler();
+//        initRecycler();
     }
 
     private void initSpinner() {
